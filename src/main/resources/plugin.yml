@@ -1,0 +1,18 @@
+name: SimpleServerLinks
+version: '1.0.0'
+main: simplexity.simpleserverlinks.SimpleServerLinks
+api-version: '1.21'
+commands:
+  links:
+    permission: server-links.links
+    description: Lists the server's links into chat
+  linkreload:
+    permission: server-links.reload
+    description: Allows reloading the server links
+permissions:
+  server-links.links:
+    default: true
+    description: Lists the server's links into chat
+  server-links.reload:
+    default: op
+    description: Allows reloading the server links

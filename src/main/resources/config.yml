@@ -1,0 +1,16 @@
+# Server Links - these are the links that will be put into the 'server links' screen
+# Link types can be found here: https://jd.papermc.io/paper/1.21.5/org/bukkit/ServerLinks.Type.html
+# If you're using a link type, you cannot have a custom display name for the button, the display name will show in
+# The /links readout
+# Description is only used for the /links readout
+links:
+  discord:
+    type: none
+    url: "https://127.0.0.1/"
+    display-name: "<blue>Join Our Discord!</blue>"
+    description: "Join the discord by clicking the link above"
+  bug-reports:
+    type: REPORT_BUG
+    url: "https://127.0.0.1/"
+    display-name: "<yellow>Report a Bug</yellow>"
+    description: "Report a bug by clicking on the link above"
