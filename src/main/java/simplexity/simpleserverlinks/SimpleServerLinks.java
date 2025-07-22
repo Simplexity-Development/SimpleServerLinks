@@ -15,7 +15,7 @@ public final class SimpleServerLinks extends JavaPlugin {
     @Override
     public void onEnable() {
         instance = this;
-        setupConfig();
+        saveDefaultConfig();
         ConfigHandler.getInstance().reloadConfigValues();
         getCommand("linkreload").setExecutor(new ReloadCommand());
         getCommand("links").setExecutor(new LinksCommand());
@@ -27,12 +27,6 @@ public final class SimpleServerLinks extends JavaPlugin {
 
     public static MiniMessage getMiniMessage() {
         return miniMessage;
-    }
-
-    private void setupConfig() {
-        saveDefaultConfig();
-        getConfig().options().copyDefaults(true);
-        saveConfig();
     }
 
     @Override
